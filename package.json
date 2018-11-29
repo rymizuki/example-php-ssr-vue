@@ -1,0 +1,16 @@
+{
+  "name": "exmample-php-ssr-vue",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mizuki_r <ry.mizuki@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "vue": "^2.5.17",
+    "vue-server-renderer": "^2.5.17"
+  }
+}

@@ -1,0 +1,7 @@
+#!/bin/sh
+docker run \
+  -p 3000:3000 \
+  -v $(pwd):/usr/local/docker/app \
+  --rm \
+  -it \
+  example-php-ssr-vue
