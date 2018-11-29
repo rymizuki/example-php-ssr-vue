@@ -1,12 +1,8 @@
 // app.js
+var state = this.global.__PRELOAD_STATE__
 var vm = new Vue({
   template: `<div>{{ msg }}</div>`,
   data: {
-    msg: 'hello'
+    msg: state.message
   }
-})
-
-// `vue-server-renderer/basic.js` によってエクスポーズ
-renderVueComponentToString(vm, (err, res) => {
-  print(res)
 })
