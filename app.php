@@ -3,10 +3,18 @@ require_once "vendor/autoload.php";
 
 use VueSSR\Renderer;
 
-$renderer = new Renderer('node_modules/');
+$renderer = new Renderer('views/node_modules/');
 ?>
-<div>
-<?php $renderer->render('./app.js', [
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Example SSR Vue on PHP</title>
+</head>
+<body>
+<?php $renderer->render('./vews/dist/app.js', [
     'message' => 'hello vue!'
 ]); ?>
-</div>
+</body>
+</html>
