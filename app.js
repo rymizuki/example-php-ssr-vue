@@ -6,3 +6,7 @@ var vm = new Vue({
     msg: state.message
   }
 })
+renderVueComponentToString(vm, (err, res) => {
+    if (err) throw new Error(err);
+    print(res)
+})
