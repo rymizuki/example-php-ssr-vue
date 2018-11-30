@@ -1,2 +1,8 @@
 #!/bin/sh
+
+# for views
+cd views && npm install && npm run build
+cd -
+
+# for server
 docker build -t example-php-ssr-vue .

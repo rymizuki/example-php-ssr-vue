@@ -15,12 +15,7 @@ $ ndenv install $(cat .node-version)
 $ ndenv rehash
 $ exec $SHELL -l
 
-# Vueをbundle
-$ cd views/
-$ npm install
-$ npm run build
-
-# PHPを実行
+# ビルドして実行
 $ bin/build
 $ bin/dev
 ```
