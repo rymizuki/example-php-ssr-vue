@@ -11,6 +11,10 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "vue": "^2.5.17",
-    "vue-server-renderer": "^2.5.17"
+    "vue-loader": "^15.4.2",
+    "vue-server-renderer": "^2.5.17",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
   }
 }

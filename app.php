@@ -13,7 +13,7 @@ $renderer = new Renderer('views/node_modules/');
     <title>Example SSR Vue on PHP</title>
 </head>
 <body>
-<?php $renderer->render('./vews/render.js', [
+<?php $renderer->render('./views/dist/main.bundle.js', [
     'message' => 'hello vue!'
 ]); ?>
 </body>

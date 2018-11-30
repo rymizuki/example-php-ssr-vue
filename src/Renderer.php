@@ -30,7 +30,7 @@ class Renderer
         $app = file_get_contents($entrypoint);
 
         $this->setupVueRendderer();
-        $this->v8->executeString("this.global.__PRELOAD_STATE__ = ${state}");
+        $this->v8->executeString("var __PRELOAD_STATE__ = ${state}; this.global.__PRELOAD_STATE__ = __PRELOAD_STATE__;");
         $this->v8->executeString($app);
     }
 
